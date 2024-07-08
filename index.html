@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="IT先锋队" />
+    <title>车牌识别反馈系统</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 引入Google字体 Roboto -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif; /* 使用Roboto字体 */
+        height: 100vh;
+        background-color: #f0f0f0;
+        transition: background-color 0.3s ease; /* 添加背景颜色过渡效果 */
+      }
+
+      .main-container {
+        display: flex;
+        height: 100%;
+        justify-content: center; /* 主容器居中 */
+      }
+
+      .sidebar {
+        width: 200px;
+        background-color: #e0e0e0;
+        padding: 1rem;
+        transition: width 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+      }
+
+      .sidebar:hover {
+        width: 250px; /* 鼠标悬停时增加宽度 */
+      }
+
+      .main-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* 内容垂直居中 */
+        gap: 20px;
+        padding: 1rem;
+      }
+
+      .content-block {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px; /* 圆角设计 */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        cursor: pointer; /* 鼠标变为手型 */
+      }
+
+      .content-block:hover {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* 鼠标悬停时增强阴影 */
+      }
+
+      h1,
+      p {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin-top: 0;
+      }
+
+      /* 可以根据需要为不同内容块添加特定样式 */
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <h1>车牌识别反馈系统</h1>
+          <p>这个区域用来存放交互功能</p>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="content-block">
+          <h2>图片预览</h2>
+          <!-- 图片元素 -->
+        </div>
+        <div class="content-block">
+          <h2>车牌信息图片</h2>
+          <!-- 图片元素 -->
+        </div>
+        <div class="content-block">
+          <h2>车牌信息</h2>
+          <p>识别准确率</p>
+          <!-- 细节信息 -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
